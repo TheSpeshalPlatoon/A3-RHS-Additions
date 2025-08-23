@@ -1,11 +1,4 @@
-class CfgPatches {
-    class tsp_rhs_tweak {
-		units[]={};
-		weapons[]={};
-		requiredVersion = 0.1;
-        requiredAddons[] = {"rhs_c_troops"}; 
-    };
-};
+class CfgPatches {class tsp_rhs_tweak {units[] = {}; weapons[] = {}; requiredVersion = 0.1; requiredAddons[] = {"rhs_c_troops"}; skipWhenMissingDependencies = 1;};};
 
 /*
 vestssss = [];

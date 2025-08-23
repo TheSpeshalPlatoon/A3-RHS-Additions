@@ -1,10 +1,5 @@
-class CfgPatches {
-	class tsp_rhs_beanie {
-		units[] = {};
-		weapons[] = {"rhs_beanie_coyote"};
-		requiredAddons[] = {"rhs_c_troops"};
-	};
-};
+class CfgPatches {class tsp_rhs_beanie {units[] = {}; weapons[] = {"rhs_beanie_coyote"}; requiredAddons[] = {"rhs_c_troops"}; skipWhenMissingDependencies = 1;};};
+
 class CfgWeapons {
 	class rhs_beanie;
 	class rhs_beanie_coyote: rhs_beanie	{

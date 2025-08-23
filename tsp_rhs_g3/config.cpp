@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_g3 {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_g3 {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class Uniform_Base; class rhs_uniform_g3_aor2: Uniform_Base {class itemInfo;};

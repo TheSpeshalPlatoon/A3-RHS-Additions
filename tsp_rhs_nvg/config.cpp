@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_nvg {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_nvg {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class NVGoggles;

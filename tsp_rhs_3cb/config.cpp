@@ -1,4 +1,10 @@
-class CfgPatches {class tsp_rhs_3cb {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {
+    class tsp_rhs_3cb {
+        requiredAddons[] = {"rhs_infantry", "UK3CB_Factions_CW_SOV"}; 
+        units[] = {};
+		skipWhenMissingDependencies = 1;
+    };
+};
 
 class CfgWeapons {
     class rhsusf_lwh_helmet_marpatd;
