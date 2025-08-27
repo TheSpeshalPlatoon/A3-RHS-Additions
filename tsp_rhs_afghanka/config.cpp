@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_afghanka {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_afghanka {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
     class rhs_uniform_flora; class rhs_uniform_afghanka_winter: rhs_uniform_flora {class itemInfo;};

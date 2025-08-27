@@ -1,0 +1,144 @@
+class CfgPatches {class tsp_tier1_light {requiredAddons[] = {"cba_common", "A3_Weapons_F_Acc", "Tier1_Weapons_cfg", "tsp_tier1_laser"}; units[] = {}; skipWhenMissingDependencies = 1;};};
+
+#define flashlight_tier1\
+    class FlashLight {\
+        ambient[] = {9, 7.5, 6}; color[] = {1300, 1100, 1000};\
+        daylight = 1; intensity = 15; scale[] = {0}; size = 1;\
+        useflare = 1; flaremaxdistance = 150; flaresize = 0.8;\
+        innerangle = 20; outerangle = 120; conefadecoef = 100;\
+        direction = "flash_dir"; position = "flash_pos";\
+        class Attenuation {start = 0.25; constant = 0; linear = 0; quadratic = 1; hardlimitend = 150; hardlimitstart = 140;};\
+    };\
+
+class CfgWeapons {
+	class ItemCore;
+	class InventoryFlashlightItem_Base_F;
+    class acc_pointer_IR;
+    
+    class Tier1_URX4_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_416_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_416_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_416_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk48Mod0_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk46Mod1_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk48Mod1_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk46Mod0_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_LA5_M600V_alt_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_416_LA5_M600V_alt_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_LA5_M600V_alt_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_LA5_M600V_alt_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk46Mod1_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk46Mod0_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk48Mod0_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_416_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk48Mod1_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_LA5_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_LA5_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_LA5_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_416_LA5_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_LA5_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_LA5_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk46Mod0_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk46Mod1_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk48Mod1_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_416_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk48Mod0_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M249_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M249_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M249_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_NGAL_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_M4BII_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_NGAL_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_Mk18_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MP7_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MP7_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MP7_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MP7_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_NGAL_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_NGAL_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_NGAL_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_NGAL_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_NGAL_M600V_alt_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_NGAL_M600V_alt_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_NGAL_M600V_alt_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_NGAL_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_NGAL_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_NGAL_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_NGAL_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_NGAL_M600V_alt_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MCX_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_MW_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_10_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_RAHG_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_145_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_URX4_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_LA5_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_LA5_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_LA5_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_LA5_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_LA5_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_NGAL_M300C_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_NGAL_M300C_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_NGAL_M600V_Black_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_NGAL_M600V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_SCAR_NGAL_M603V_FL: acc_pointer_IR {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_DBALPL_FL: ItemCore {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+    class Tier1_TLR1: ItemCore {class ItemInfo: InventoryFlashLightItem_Base_F {flashlight_tier1};};
+};

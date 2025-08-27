@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_mbav {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_mbav {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
     class rhsusf_mbav; class rhsusf_mbav_light; class rhsusf_mbav_rifleman;	class rhsusf_mbav_mg; class rhsusf_mbav_grenadier; class rhsusf_mbav_medic;

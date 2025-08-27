@@ -8,6 +8,7 @@ class CfgPatches {
 			"rhsusf_muzzleflash"
 		};
 		units[] = {};
+		skipWhenMissingDependencies = 1;
 	};
 };
 

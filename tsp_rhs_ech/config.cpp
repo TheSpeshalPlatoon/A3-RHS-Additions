@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_ech {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_ech {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class rhsusf_ach_helmet_ocp; class rhsusf_ach_helmet_ocp_alt;

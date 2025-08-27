@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_fal {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_fal {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {};}; skipWhenMissingDependencies = 1;};
 
 class CfgWeapons {
 	class rhs_weap_l1a1_wood;

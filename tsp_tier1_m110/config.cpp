@@ -1,41 +1,36 @@
-class CfgPatches {
-	class tsp_tier1 {
-		requiredAddons[] = {"asdg_jointmuzzles", "asdg_jointrails", "cba_main", "cba_main_a3"};
-		units[] = {}; weapons[] = {"Tier1_HK416D145_22"};
-	};
-};
+class CfgPatches {class tsp_tier1_m110 {requiredAddons[] = {"asdg_jointmuzzles", "asdg_jointrails", "cba_main", "cba_main_a3"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class rhs_weap_sr25;
-	class Tier1_M110k1: rhs_weap_sr25 {initSpeed = 2200; dispersion = 0.000001; handAnim[] = {"OFP2_ManSkeleton","\tsp_tier1\anim\clamp.rtm"};};
+	class Tier1_M110k1: rhs_weap_sr25 {initSpeed = 2200; dispersion = 0.000001; handAnim[] = {"OFP2_ManSkeleton","\tsp_tier1_m110\anim\clamp.rtm"};};
 	class Tier1_M110k5_ACS: Tier1_M110k1 {
 		displayName = "SR-25 M-LOK (ACS, Coyote)";
 		hiddenSelections[] = {"camo","camo1","URX4"};
-		hiddenSelectionsTextures[] = {"\tsp_tier1\tex\m110k5_coy_co.paa","\tsp_tier1\tex\kac_coy_co.paa","\tsp_tier1\tex\urx_coy_co.paa"};
+		hiddenSelectionsTextures[] = {"\tsp_tier1_m110\tex\m110k5_coy_co.paa","\tsp_tier1_m110\tex\kac_coy_co.paa","\tsp_tier1_m110\tex\urx_coy_co.paa"};
 		rhs_grip1_change = "Tier1_M110k5_ACS_grip"; rhs_grip2_change = "Tier1_M110k5_ACS_grip2"; rhs_grip3_change = "Tier1_M110k5_ACS_grip3";
 	};
 	class Tier1_M110k5_ACS_grip: Tier1_M110k5_ACS {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_vfg.rtm"};};
 	class Tier1_M110k5_ACS_grip2: Tier1_M110k5_ACS {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_afg.rtm"};};
 	class Tier1_M110k5_ACS_grip3: Tier1_M110k5_ACS {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_vfg.rtm"};};
 	class Tier1_M110k5_ACS_blk: Tier1_M110k5_ACS {
-		baseWeapon = "Tier1_M110k5_ACS_blk"; displayName = "SR-25 M-LOK (ACS, Black)"; picture = "\tsp_tier1\tex\m110k5_blk.paa";
-		hiddenSelectionsTextures[] = {"\tsp_tier1\tex\m110k5_blk_co.paa","\tsp_tier1\tex\kac_blk_co.paa","\tsp_tier1\tex\urx_blk_co.paa"};
+		baseWeapon = "Tier1_M110k5_ACS_blk"; displayName = "SR-25 M-LOK (ACS, Black)"; picture = "\tsp_tier1_m110\tex\m110k5_blk.paa";
+		hiddenSelectionsTextures[] = {"\tsp_tier1_m110\tex\m110k5_blk_co.paa","\tsp_tier1_m110\tex\kac_blk_co.paa","\tsp_tier1_m110\tex\urx_blk_co.paa"};
 		rhs_grip1_change = "Tier1_M110k5_ACS_blk_grip"; rhs_grip2_change = "Tier1_M110k5_ACS_blk_grip2"; rhs_grip3_change = "Tier1_M110k5_ACS_blk_grip3";
 	};
 	class Tier1_M110k5_ACS_blk_grip: Tier1_M110k5_ACS_blk {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_vfg.rtm"};};
 	class Tier1_M110k5_ACS_blk_grip2: Tier1_M110k5_ACS_blk {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_afg.rtm"};};
 	class Tier1_M110k5_ACS_blk_grip3: Tier1_M110k5_ACS_blk {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_vfg.rtm"};};
 	class Tier1_M110k5_ACS_des: Tier1_M110k5_ACS {
-		baseWeapon = "Tier1_M110k5_ACS_des"; displayName = "SR-25 M-LOK (ACS, Desert)"; picture = "\tsp_tier1\tex\m110k5_des.paa";
-		hiddenSelectionsTextures[] = {"\tsp_tier1\tex\m110k5_des_co.paa","\tsp_tier1\tex\kac_coy_co.paa","\tsp_tier1\tex\urx_des_co.paa"};
+		baseWeapon = "Tier1_M110k5_ACS_des"; displayName = "SR-25 M-LOK (ACS, Desert)"; picture = "\tsp_tier1_m110\tex\m110k5_des.paa";
+		hiddenSelectionsTextures[] = {"\tsp_tier1_m110\tex\m110k5_des_co.paa","\tsp_tier1_m110\tex\kac_coy_co.paa","\tsp_tier1_m110\tex\urx_des_co.paa"};
 		rhs_grip1_change = "Tier1_M110k5_ACS_des_grip"; rhs_grip2_change = "Tier1_M110k5_ACS_des_grip2"; rhs_grip3_change = "Tier1_M110k5_ACS_des_grip3";
 	};
 	class Tier1_M110k5_ACS_des_grip: Tier1_M110k5_ACS_des {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_vfg.rtm"};};
 	class Tier1_M110k5_ACS_des_grip2: Tier1_M110k5_ACS_des {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_afg.rtm"};};
 	class Tier1_M110k5_ACS_des_grip3: Tier1_M110k5_ACS_des {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_vfg.rtm"};};
 	class Tier1_M110k5_ACS_wdl: Tier1_M110k5_ACS {
-		baseWeapon = "Tier1_M110k5_ACS_wdl"; displayName = "SR-25 M-LOK (ACS, Woodland)"; picture = "\tsp_tier1\tex\m110k5_wdl.paa";
-		hiddenSelectionsTextures[] = {"\tsp_tier1\tex\m110k5_wdl_co.paa","\tsp_tier1\tex\kac_blk_co.paa","\tsp_tier1\tex\urx_wdl_co.paa"};
+		baseWeapon = "Tier1_M110k5_ACS_wdl"; displayName = "SR-25 M-LOK (ACS, Woodland)"; picture = "\tsp_tier1_m110\tex\m110k5_wdl.paa";
+		hiddenSelectionsTextures[] = {"\tsp_tier1_m110\tex\m110k5_wdl_co.paa","\tsp_tier1_m110\tex\kac_blk_co.paa","\tsp_tier1_m110\tex\urx_wdl_co.paa"};
 		rhs_grip1_change = "Tier1_M110k5_ACS_wdl_grip"; rhs_grip2_change = "Tier1_M110k5_ACS_wdl_grip2"; rhs_grip3_change = "Tier1_M110k5_ACS_wdl_grip3";
 	};
 	class Tier1_M110k5_ACS_wdl_grip: Tier1_M110k5_ACS_wdl {handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_scar_vfg.rtm"};};

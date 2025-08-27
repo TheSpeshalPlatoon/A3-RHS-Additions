@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_grip {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_grip {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class UnderBarrelSlot;
 class rhs_rifle_gripod_slot: UnderBarrelSlot {class compatibleItems {rhsusf_acc_kac_grip_frwd = 1;};};

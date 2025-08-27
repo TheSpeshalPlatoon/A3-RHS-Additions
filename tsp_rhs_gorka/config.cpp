@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_gorka {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_gorka {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class rhs_uniform_gorka_1_a;

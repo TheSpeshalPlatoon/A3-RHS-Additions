@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_frog {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_frog {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class rhs_uniform_cu_ocp; class rhs_uniform_FROG01_wd: rhs_uniform_cu_ocp {class itemInfo;};

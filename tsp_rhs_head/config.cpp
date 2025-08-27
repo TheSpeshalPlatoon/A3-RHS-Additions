@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_head {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_head {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {	
 	class HeadgearItem; class rhs_beanie; class rhs_fieldcap_m88: rhs_beanie {class itemInfo: HeadgearItem {allowedSlots[] = {801,901,701,605};};};

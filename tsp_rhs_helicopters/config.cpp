@@ -25,6 +25,7 @@ class CfgPatches
 			"rhsusf_a2port_air2"
 		};
 		author="Goosey";
+		skipWhenMissingDependencies = 1;
 	};
 };
 class CfgVehicles

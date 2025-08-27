@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_m27 {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_m27 {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class WeaponSlotsInfo;
 class rhs_western_rifle_afg_slot;

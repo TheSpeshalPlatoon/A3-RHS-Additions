@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_6sh122 {requiredAddons[] = {"rhs_infantry"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_6sh122 {requiredAddons[] = {"rhs_infantry"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class rhs_uniform_vkpo; class rhs_uniform_6sh122_v1: rhs_uniform_vkpo {class itemInfo;}; class rhs_uniform_6sh122_gloves_v1: rhs_uniform_6sh122_v1 {class itemInfo;};

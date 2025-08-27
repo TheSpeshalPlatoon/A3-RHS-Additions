@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_ghillie {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_ghillie {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class SlotInfo;
 class WeaponSlotsInfo;

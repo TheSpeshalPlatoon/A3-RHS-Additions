@@ -1,12 +1,12 @@
-class CfgPatches {class tsp_rhs_ergo {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {};};};
+class CfgPatches {class tsp_rhs_ergo {requiredAddons[] = {"tsp_rhs_weapon"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class WeaponSlotsInfo;
 class UnderBarrelSlot;
 class rhs_rifle_gripod_slot: UnderBarrelSlot {class compatibleItems;};
 class rhs_western_rifle_gripod_slot: rhs_rifle_gripod_slot {class compatibleItems: compatibleItems {rhs_acc_ergo_blk = 1;};};
 class CfgWeapons {
-	class rhsusf_acc_grip1;
-	class rhs_acc_ergo_blk: rhsusf_acc_grip1 {rhs_grip_type = "rhs_grip4_change"; displayName = "Ergo Rail Extender (Black)"; model = "\tsp_rhs_ergo\ergo_blk.p3d";};
+	class rhs_acc_bipod;
+	class rhs_acc_ergo_blk: rhs_acc_bipod {picture = "\tsp_rhs_ergo\gui\ergo.paa"; rhs_grip_type = "rhs_grip4_change"; displayName = "Ergo Rail Extender (Black)"; model = "\tsp_rhs_ergo\ergo_blk.p3d";};
 
 	//-- M4
 	class rhs_weap_m4_Base;
