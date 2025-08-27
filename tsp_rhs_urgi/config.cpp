@@ -34,7 +34,7 @@ class CfgWeapons {
             "rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
             "\rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa"
         };
-        hiddenSelectionsMaterials[] = {"\rhsusf\addons\rhsusf_weapons\m4\data\m4a1.rvmat", "\tsp_rhs_weapon\tex\empty.rvmat", "\rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.rvmat"};
+        hiddenSelectionsMaterials[] = {"\rhsusf\addons\rhsusf_weapons\m4\data\m4a1_actual.rvmat", "\tsp_rhs_weapon\tex\empty.rvmat", "\rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.rvmat"};
         class linkedItems {class linkedItemsUnder {slot = "underBarrelSlot"; item = "rhs_acc_urgi_coy";}; class linkedItemsMuzzle {slot = "MuzzleSlot"; item = "rhsusf_acc_SF3P556";};};
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class gripodSlot {}; 
@@ -90,7 +90,7 @@ class CfgWeapons {
             "rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa",
             "\rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa"
         };
-        hiddenSelectionsMaterials[] = {"\rhsusf\addons\rhsusf_weapons\m4\data\m4a1.rvmat", "\tsp_rhs_weapon\tex\empty.rvmat", "\rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.rvmat"};
+        hiddenSelectionsMaterials[] = {"\rhsusf\addons\rhsusf_weapons\m4\data\m4a1_actual.rvmat", "\tsp_rhs_weapon\tex\empty.rvmat", "\rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.rvmat"};
         class linkedItems {class linkedItemsUnder {slot = "underBarrelSlot"; item = "rhs_acc_urgi_s_coy";}; class linkedItemsMuzzle {slot = "MuzzleSlot"; item = "rhsusf_acc_SF3P556";};};
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class gripodSlot {}; 
