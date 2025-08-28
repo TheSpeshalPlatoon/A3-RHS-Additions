@@ -10,7 +10,7 @@ class CfgWeapons {
 	class mbavr_mg: rhsusf_mbav_mg {displayName = "MBAV Ranger (Machinegunner)"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader"; mbav_green};
 	class mbavr_gl: rhsusf_mbav_grenadier {displayName = "MBAV Ranger (Grenadier)"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader"; mbav_green};
 	class mbavr_m: rhsusf_mbav_medic {displayName = "MBAV Ranger (Medic)"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader"; mbav_green};
-	class mbavmc: rhsusf_mbav {displayName = "MBAV Multicam"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader"; mbav_multicam};
+	//class mbavmc: rhsusf_mbav {displayName = "MBAV Multicam"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader"; mbav_multicam};
 	class mbavmc_l: rhsusf_mbav_light {displayName = "MBAV Multicam (Light)"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader"; mbav_multicam};
 	class mbavmc_r: rhsusf_mbav_rifleman {displayName = "MBAV Multicam (Rifleman)"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader"; mbav_multicam};
 	class mbavmc_mg: rhsusf_mbav_mg	{displayName = "MBAV Multicam (Machinegunner)"; model = "rhsusf\addons\rhsusf_infantry\gear\vests\rhs_spc_squadleader";	mbav_multicam};
