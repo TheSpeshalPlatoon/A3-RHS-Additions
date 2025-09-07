@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_tier1_m110 {requiredAddons[] = {"asdg_jointmuzzles", "asdg_jointrails", "cba_main", "cba_main_a3"}; units[] = {}; skipWhenMissingDependencies = 1;};};
+class CfgPatches {class tsp_tier1_m110 {requiredAddons[] = {"asdg_jointmuzzles", "asdg_jointrails", "cba_main", "cba_main_a3", "Tier1_Weapons_cfg"}; units[] = {}; skipWhenMissingDependencies = 1;};};
 
 class CfgWeapons {
 	class rhs_weap_sr25;

@@ -9,7 +9,6 @@ class CfgWeapons {
 	class rhs_weap_m4;
 	class rhs_weap_m4a1;
 
-
 	class rhs_acc_m4_handguard: rhs_acc_bipod {displayName = "Plastic Handguard"; model = "\tsp_rhs_m4\handguard.p3d"; descriptionShort = "Standard plastic M4 handguard";};
 	class rhs_acc_m4_moe: rhs_acc_m4_handguard {displayName = "MOE Handguard"; model = "\tsp_rhs_m4\moe.p3d"; descriptionShort = "MOE handguard";};	
 	class rhs_acc_m4_moe_tan: rhs_acc_m4_moe {displayName = "MOE Handguard (Tan)"; model = "\tsp_rhs_m4\moe_tan.p3d";};
