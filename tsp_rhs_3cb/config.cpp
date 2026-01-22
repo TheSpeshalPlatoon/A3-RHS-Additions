@@ -1,6 +1,6 @@
 class CfgPatches {
     class tsp_rhs_3cb {
-        requiredAddons[] = {"rhs_infantry", "UK3CB_Factions_CW_SOV"}; 
+        requiredAddons[] = {"rhs_infantry", "UK3CB_Factions_Equipment_CW"}; 
         units[] = {};
 		skipWhenMissingDependencies = 1;
     };
