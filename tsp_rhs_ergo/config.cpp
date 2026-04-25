@@ -49,7 +49,7 @@ class CfgWeapons {
 	};
 
 	//-- GOOSEY
-	class rhs_weap_m4a1_goose: rhs_weap_m4a1_d {
+	class rhs_weap_m4a1_goose: rhs_weap_m4a1_carryhandle {
         displayName = "M4A1 (Goosey)";
     	baseWeapon = "rhs_weap_m4a1_goose";
         hiddenSelectionsTextures[] = {"\tsp_rhs_ergo\tex\m4_goose.paa", "\rhsusf\addons\rhsusf_weapons\m4\data\magazine_co.paa", "", "", "\rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa", "\rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_d_co.paa", "\rhsusf\addons\rhsusf_weapons\m4\data\m203s_d_co.paa", "\rhsusf\addons\rhsusf_weapons\m4\data\kacleaf_d_co.paa", "\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa", "\tsp_rhs_ergo\tex\m4_goose.paa"};
