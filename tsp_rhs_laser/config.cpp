@@ -1,17 +1,17 @@
-class CfgPatches {class tsp_rhs_laser {requiredAddons[] = {"rhsusf_c_weapons", "cba_common", "ace_compat_rhs_usf3_nightvision"}; units[] = {}; skipWhenMissingDependencies = 1;};}; 
+class CfgPatches {class tsp_rhs_laser {requiredAddons[] = {"cba_common", "rhsusf_c_weapons", "ace_compat_rhs_usf3_nightvision"}; units[] = {}; skipWhenMissingDependencies = 1;};}; 
+//(("true" configClasses (configFile >> "CfgWeapons")) select {"rhsusf_acc_anpeq15" in configName _x}) apply {'class '+configName _x+': '+configName inheritsFrom _x+' {};'}
 
 #define mode_lase class Pointer {irLaserPos = "laser pos"; irLaserEnd = "laser dir"; irDistance = 5;};
 #define mode_ir\
-        class FlashLight {\
-            ambient[] = {0.58431,0.72940999,0.81568998}; color[] = {149,186,208};\
-            irlight = 1; dayLight = 1; intensity = 250; scale[] = {0}; size = 1;\
-            useFlare = 1; flareMaxDistance = 554; flareSize = 4;\
-            innerAngle = 8; outerAngle = 14; coneFadeCoef = 4;\
-            direction = "laser dir"; position = "laser pos";\
-            class Attenuation {start = 100; constant = 100; linear = 60; quadratic = 20; hardLimitStart = 50; hardLimitEnd = 300; };\
-        };\
+    class FlashLight {\
+        ambient[] = {0.58431,0.72940999,0.81568998}; color[] = {149,186,208};\
+        irlight = 1; dayLight = 1; intensity = 50; scale[] = {0}; size = 1;\
+        useFlare = 1; flareMaxDistance = 554; flareSize = 4;\
+        innerAngle = 8; outerAngle = 14; coneFadeCoef = 4;\
+        class Attenuation {start = 100; constant = 100; linear = 60; quadratic = 20; hardLimitStart = 50; hardLimitEnd = 300;};\
+        direction = "laser dir"; position = "laser pos";\
+    };\
    
-//(("true" configClasses (configFile >> "CfgWeapons")) select {"rhsusf_acc_anpeq15" in configName _x}) apply {'class '+configName _x+': '+configName inheritsFrom _x+' {};'}
 class CfgWeapons {
 	class InventoryFlashLightItem_Base_F;
 	class ItemCore;
