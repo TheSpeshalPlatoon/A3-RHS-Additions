@@ -6,6 +6,10 @@ class CfgWeapons {
 	class rhsusf_opscore_mar_fg;
 	class rhs_lshz: rhsusf_opscore_mar_fg {displayName = "LShZ"; hiddenSelectionsTextures[] = {"\tsp_rhs_head\tex\lshz.paa","rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\od2_co.paa",""};};
 	class rhs_lshz_camo: rhsusf_opscore_mar_fg {displayName = "LShZ (Painted)"; hiddenSelectionsTextures[] = {"\tsp_rhs_head\tex\lshz_camo.paa","rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\od2_co.paa",""};};
+	class rhsusf_opscore_mar_fg_pelt;
+	class rhs_lshz_pelt: rhsusf_opscore_mar_fg_pelt {displayName = "LShZ (Headset)"; hiddenSelectionsTextures[] = {"\tsp_rhs_head\tex\lshz.paa","rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\od2_co.paa","\tsp_rhs_head\tex\comtac_od_co.paa"};};
+	class rhs_lshz_camo_pelt: rhsusf_opscore_mar_fg_pelt {displayName = "LShZ (Painted/Headset)"; hiddenSelectionsTextures[] = {"\tsp_rhs_head\tex\lshz_camo.paa","rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\od2_co.paa","\tsp_rhs_head\tex\comtac_od_co.paa"};};
+	
 	
 	class rhs_altyn; class rhs_altyn_novisor: rhs_altyn {class itemInfo;};
 	class rhs_zsh: rhs_altyn_novisor {
