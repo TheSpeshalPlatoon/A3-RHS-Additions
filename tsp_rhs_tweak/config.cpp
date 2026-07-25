@@ -1,4 +1,4 @@
-class CfgPatches {class tsp_rhs_tweak {units[] = {}; weapons[] = {}; requiredVersion = 0.1; requiredAddons[] = {"rhs_c_troops"}; skipWhenMissingDependencies = 1;};};
+class CfgPatches {class tsp_rhs_tweak {units[] = {}; weapons[] = {}; requiredVersion = 0.1; requiredAddons[] = {"rhs_c_troops", "rhsgref_weapons2"}; skipWhenMissingDependencies = 1;};};
 
 /*
 vestssss = [];
@@ -674,4 +674,9 @@ class CfgMagazineWells {  //-- 3Rnd HE for WhiskyNova
 	class CBA_40mm_M203 {
 		BI_grenades_all[] = {"1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","3Rnd_HE_Grenade_shell","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F"};
 	};
+};
+
+class CfgMagazines {
+    class HandGrenade; 
+    class rhs_grenade_m15_mag: HandGrenade {mass = 5;};
 };
