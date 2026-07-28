@@ -19,6 +19,9 @@ class asdg_MuzzleSlot;
 class asdg_MuzzleSlot_556: asdg_MuzzleSlot {class compatibleItems {rhsgref_sdn6_suppressor = 1;};}; 
 class rhs_western_rifle_muzzle_slot: asdg_MuzzleSlot_556 {class compatibleItems {rhsgref_sdn6_suppressor = 1;};};
 
+class asdg_MuzzleSlot_762R: asdg_MuzzleSlot {class compatibleItems {rhs_acc_uuk = 1; rhs_acc_ak5 = 1; rhs_acc_dtk1 = 1; rhs_acc_dtk2 = 1; rhs_acc_dtk3 = 1;};}; 
+class asdg_MuzzleSlot_545R: asdg_MuzzleSlot {class compatibleItems {rhs_acc_uuk = 1; rhs_acc_ak5 = 1; rhs_acc_dtk1 = 1; rhs_acc_dtk2 = 1; rhs_acc_dtk3 = 1;};}; 
+
 class CfgWeapons {
 	class acc_flashlight;
 	class bipod_01_F_snd;
