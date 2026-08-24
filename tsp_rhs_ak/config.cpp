@@ -166,6 +166,7 @@ class CfgWeapons {
 	};
 	class rhs_weap_ak104_zenitco01_npz: rhs_weap_ak104_zenitco01
 	{
+		model = "\rhsafrf\addons\rhs_weapons3\zenitco\rhs_ak105_zenit_npz";
 		scope = 2;
 		scopeArsenal = 2;
 	};
