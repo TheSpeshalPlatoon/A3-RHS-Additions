@@ -8,6 +8,8 @@ class CfgWeapons {
 	class rhsusf_acc_rvg_de: rhsusf_acc_rvg_blk {rhs_grip_type = "rhs_grip2_change";};
 	class rhsusf_acc_tdstubby_blk: rhsusf_acc_grip3 {rhs_grip_type = "rhs_grip2_change";};
 	class rhsusf_acc_tdstubby_tan: rhsusf_acc_tdstubby_blk {rhs_grip_type = "rhs_grip2_change";};
+	class rhs_acc_grip_rk2;
+	class rhs_acc_grip_rk6: rhs_acc_grip_rk2 {rhs_grip_type = "rhs_grip2_change";};
 	
 	class rhsusf_acc_kac_grip;
 	class rhsusf_acc_kac_grip_frwd: rhsusf_acc_kac_grip {displayName = "KAC Vertical Grip (Forward)"; rhs_grip_type = "rhs_grip2_change";};
