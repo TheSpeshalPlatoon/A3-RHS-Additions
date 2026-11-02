@@ -6,7 +6,7 @@ class CfgWeapons {
     class rhs_weap_m4a1_blockII;
     class rhs_weap_mk18;
 
-    class rhs_acc_urgi_blk: rhs_acc_bipod {displayName = "URGI Handguard (Black)"; model = "\tsp_rhs_urgi\urgi_blk.p3d";};
+    class rhs_acc_urgi_blk: rhs_acc_bipod {scope = 2; permenant = true; displayName = "URGI Handguard (Black)"; model = "\tsp_rhs_urgi\urgi_blk.p3d";};
     class rhs_acc_urgi_coy: rhs_acc_urgi_blk {displayName = "URGI Handguard (Coyote)"; model = "\tsp_rhs_urgi\urgi_coy.p3d";};
     class rhs_acc_urgi_des: rhs_acc_urgi_blk {displayName = "URGI Handguard (Desert)"; model = "\tsp_rhs_urgi\urgi_des.p3d";};
     class rhs_acc_urgi_wdl: rhs_acc_urgi_blk {displayName = "URGI Handguard (Woodland)"; model = "\tsp_rhs_urgi\urgi_wdl.p3d";};    

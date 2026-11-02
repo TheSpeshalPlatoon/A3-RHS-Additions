@@ -9,11 +9,11 @@ class CfgWeapons {
 	class rhs_weap_m4;
 	class rhs_weap_m4a1;
 
-	class rhs_acc_m4_handguard: rhs_acc_bipod {displayName = "Plastic Handguard"; model = "\tsp_rhs_m4\handguard.p3d"; descriptionShort = "Standard plastic M4 handguard";};
+	class rhs_acc_m4_handguard: rhs_acc_bipod {scope = 2; permenant = true; displayName = "Plastic Handguard"; model = "\tsp_rhs_m4\handguard.p3d"; descriptionShort = "Standard plastic M4 handguard";};
 	class rhs_acc_m4_moe: rhs_acc_m4_handguard {displayName = "MOE Handguard"; model = "\tsp_rhs_m4\moe.p3d"; descriptionShort = "MOE handguard";};	
 	class rhs_acc_m4_moe_tan: rhs_acc_m4_moe {displayName = "MOE Handguard (Tan)"; model = "\tsp_rhs_m4\moe_tan.p3d";};
 	class rhs_acc_m4_car_bipod: rhs_acc_m4_handguard {displayName = "CAR Stock"; model = "\tsp_rhs_m4\car_bipod.p3d"; descriptionShort = "CAR-15 style stock";};
-	class rhs_acc_m4_car_pointer: rhs_acc_pointer {displayName = "CAR Stock"; model = "\tsp_rhs_m4\car_pointer.p3d"; descriptionShort = "CAR-15 style stock";};
+	class rhs_acc_m4_car_pointer: rhs_acc_pointer {scope = 2; permenant = true; displayName = "CAR Stock"; model = "\tsp_rhs_m4\car_pointer.p3d"; descriptionShort = "CAR-15 style stock";};
 
 	class rhs_weap_m4_handguard: rhs_weap_m4_carryhandle {
 		baseWeapon = "rhs_weap_m4_handguard"; displayName = "M4 (Plastic Handguard)"; picture = "\tsp_rhs_m4\m4.paa";
@@ -66,7 +66,7 @@ class CfgWeapons {
 			class underBarrelSlot {linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL"; class compatibleItems {rhs_acc_m4_handguard = 1; rhs_acc_m4_moe = 1; rhs_acc_m4_moe_tan = 1;};};
 		};
 	};
-		class rhs_weap_m4a1_car: rhs_weap_m4a1_handguard {
+	class rhs_weap_m4a1_car: rhs_weap_m4a1_handguard {
 		displayName = "M4A1 (CAR Stock)";
 		baseWeapon = "rhs_weap_m4a1_car";
 		hiddenSelectionsTextures[] = {"\tsp_rhs_weapon\tex\m4a1_nostock.paa"};

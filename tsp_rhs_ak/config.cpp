@@ -3,6 +3,23 @@ class CfgPatches {class tsp_rhs_ak {requiredAddons[] = {"rhs_c_weapons"}; units[
 class rhs_picattinny_russian_handguard_scopes_slot;
 class WeaponSlotsInfo;
 class CfgWeapons {
+	class rhs_weap_akms;
+	class rhs_weap_akms_folded;
+	class rhs_weap_akms_gold: rhs_weap_akms {
+		displayName = "AKMS (Gold)"; picture = "\tsp_rhs_ak\gold.paa"; 
+		hiddenSelectionsTextures[] = {"tsp_rhs_ak\rhs_akm_prm_co.paa","tsp_rhs_ak\rhs_akm_acc_co.paa"};
+		hiddenSelectionsMaterials[] = {"tsp_rhs_ak\rhs_akm_prm.rvmat","tsp_rhs_ak\rhs_akm_acc.rvmat"};
+		magazines[] = {"rhs_30Rnd_762x39mm"};
+		scope = 1; scopeArsenal = 1; baseWeapon = "rhs_weap_akms_gold_folded"; rhs_fold = "rhs_weap_akms_gold_folded";
+	};
+	class rhs_weap_akms_gold_folded: rhs_weap_akms_folded {
+		displayName = "AKMS (Gold)"; picture = "\tsp_rhs_ak\gold.paa"; 
+		hiddenSelectionsTextures[] = {"tsp_rhs_ak\rhs_akm_prm_co.paa","tsp_rhs_ak\rhs_akm_acc_co.paa"};
+		hiddenSelectionsMaterials[] = {"tsp_rhs_ak\rhs_akm_prm.rvmat","tsp_rhs_ak\rhs_akm_acc.rvmat"};
+		magazines[] = {"rhs_30Rnd_762x39mm"};
+		scope = 2; scopeArsenal = 2; baseWeapon = "rhs_weap_akms_gold_folded"; rhs_fold = "rhs_weap_akms_gold";
+	};
+
 	class rhs_weap_ak74m_zenitco01;
 	class rhs_weap_ak74m_zenitco01_npz: rhs_weap_ak74m_zenitco01 {scope = 2; scopeArsenal = 2;};
 	class rhs_weap_ak105_zenitco01;

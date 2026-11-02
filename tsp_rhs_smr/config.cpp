@@ -6,7 +6,7 @@ class CfgWeapons {
     class rhs_weap_m4a1_blockII;
     class rhs_weap_mk18;
 
-    class rhs_acc_smr_blk: rhs_acc_bipod {displayName = "SMR Handguard (Black)"; model = "\tsp_rhs_smr\smr_blk.p3d";};
+    class rhs_acc_smr_blk: rhs_acc_bipod {scope = 2; permenant = true; displayName = "SMR Handguard (Black)"; model = "\tsp_rhs_smr\smr_blk.p3d";};
     class rhs_acc_smr_tan: rhs_acc_smr_blk {displayName = "SMR Handguard (Tan)"; model = "\tsp_rhs_smr\smr_tan.p3d";};
     class rhs_acc_smr_des: rhs_acc_smr_blk {displayName = "SMR Handguard (Desert)"; model = "\tsp_rhs_smr\smr_des.p3d";};
     class rhs_acc_smr_wdl: rhs_acc_smr_blk {displayName = "SMR Handguard (Woodland)"; model = "\tsp_rhs_smr\smr_wdl.p3d";};

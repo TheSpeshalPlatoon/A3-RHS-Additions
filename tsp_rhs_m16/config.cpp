@@ -7,13 +7,13 @@ class CfgWeapons {
 	class rhs_weap_m16a4_carryhandle;
 	class rhs_weap_m16a4_carryhandle_m203;
 	
-	class rhs_acc_m16_norail: rhs_acc_pointer {displayName = "Rail Remover"; model = "\tsp_rhs_m16\m16_norail.p3d"; descriptionShort = "";};
-	class rhs_acc_m16_handguard: rhs_acc_bipod {displayName = "Plastic Handguard"; model = "\tsp_rhs_m16\handguard.p3d"; descriptionShort = "Standard plastic M16 handguard";};
+	class rhs_acc_m16_norail: rhs_acc_pointer {permenant = true; displayName = "Rail Remover"; model = "\tsp_rhs_m16\m16_norail.p3d"; descriptionShort = "";};
+	class rhs_acc_m16_handguard: rhs_acc_bipod {scope = 2; permenant = true; displayName = "Plastic Handguard"; model = "\tsp_rhs_m16\handguard.p3d"; descriptionShort = "Standard plastic M16 handguard";};
 	class rhs_acc_m16_handguard2: rhs_acc_m16_handguard {displayName = "Plastic Handguard (Magwell)"; weaponInfoType = "RHS_Gripod1"; rhs_grip_type = "rhs_grip1_change";};
 
 	class rhs_acc_m16_handguard_m203: rhs_acc_m16_handguard {displayName = "M203 Handguard"; model = "\tsp_rhs_m16\handguard_m203.p3d"; descriptionShort = "M203 handguard";};
-	class rhs_acc_m16_handguard_m203_rail: rhs_acc_pointer {model = "\tsp_rhs_m16\handguard_m203_rail.p3d";};
-	class rhs_acc_m16_handguard_m203_norail: rhs_acc_pointer {model = "\tsp_rhs_m16\handguard_m203_norail.p3d";};
+	class rhs_acc_m16_handguard_m203_rail: rhs_acc_m16_norail {model = "\tsp_rhs_m16\handguard_m203_rail.p3d";};
+	class rhs_acc_m16_handguard_m203_norail: rhs_acc_m16_norail {model = "\tsp_rhs_m16\handguard_m203_norail.p3d";};
 
 	class rhs_weap_m16a4_handguard: rhs_weap_m16a4_carryhandle {
 		baseWeapon = "rhs_weap_m16a4_handguard"; displayName = "M16A4 (Plastic Handguard)"; rhs_grip1_change = "rhs_weap_m16a4_handguard_grip1";

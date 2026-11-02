@@ -1,13 +1,31 @@
 class CfgPatches {class tsp_rhs_tweak {units[] = {}; weapons[] = {}; requiredVersion = 0.1; requiredAddons[] = {"rhs_c_troops", "rhsgref_weapons2"}; skipWhenMissingDependencies = 1;};};
 
-/*
-vestssss = [];
-{
-    [configName _x, configName inheritsFrom _x] params ["_name", "_parent"];
-    vestssss pushBack ["class "+_name+": "+_parent+" {};"];
-} forEach (("true" configClasses (configFile >> "CfgWeapons")) select {"rhs_" in configName _x && ((configName _x call BIS_fnc_itemType)#1 == "headgear")});
-vestssss
-*/
+class CfgAmmo {  //-- Snipers should do more damage, shotguns should do less
+    class BulletBase; 
+    class rhs_ammo_762x51_M80_Ball: BulletBase {hit = 12;};
+    class rhs_ammo_762x51_M118_Special_Ball:  rhs_ammo_762x51_M80_Ball {hit = 12;};
+    class rhs_ammo_762x51_M61_AP: rhs_ammo_762x51_M80_Ball {hit = 12;};
+    class rhs_ammo_762x51_M62_tracer: rhs_ammo_762x51_M80_Ball {hit = 12;};
+    class rhs_ammo_762x51_M80A1EPR_Ball: rhs_ammo_762x51_M80_Ball {hit = 12;};
+    class rhs_ammo_762x51_M993_Ball: rhs_ammo_762x51_M80_Ball {hit = 40;};
+    class rhs_ammo_762x51_Mk316_Special_Ball: rhs_ammo_762x51_M118_Special_Ball {hit = 12;};
+
+    class B_12Gauge_Slug; class rhs_ammo_12g_slug: B_12Gauge_Slug {hit = 15;};
+    class B_12Gauge_Pellets; class rhs_ammo_12g_00buckshot: B_12Gauge_Pellets {hit = 5;};
+    class rhs_ammo_12g_00buckshot_pellet: BulletBase {hit = 3;};
+
+    class SmokeShell; class rhs_ammo_an_m14_th3: SmokeShell {ace_grenades_incendiary = 1;};  //-- Also ACE incediary
+};
+
+class CfgMagazineWells {  //-- 3Rnd HE for WhiskyNova
+	class CBA_40mm_M203 {
+		BI_grenades_all[] = {"1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","3Rnd_HE_Grenade_shell","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F"};
+	};
+};
+
+class CfgMagazines {class HandGrenade; class rhs_grenade_m15_mag: HandGrenade {mass = 5;};};  //-- M15 smoke should be smaller
+
+class CfgVehicles {class B_AssaultPack_Base; class rhs_medic_bag: B_AssaultPack_Base	{maximumLoad = 170; mass = 20};};  //-- Medic bag should fit medikit
 
 class CfgWeapons {
 	class ItemCore; class Vest_Camo_Base: ItemCore {class ItemInfo;};
@@ -658,32 +676,4 @@ class CfgWeapons {
     class rhs_6b48: rhs_6b47_bare {class ItemInfo: ItemInfo {
         #include "\tsp_rhs_tweak\helmet_strong.hpp"
     };};
-};
-
-class CfgAmmo {
-    class BulletBase; 
-    class rhs_ammo_762x51_M80_Ball: BulletBase {hit = 12;};
-    class rhs_ammo_762x51_M118_Special_Ball:  rhs_ammo_762x51_M80_Ball {hit = 12;};
-    class rhs_ammo_762x51_M61_AP: rhs_ammo_762x51_M80_Ball {hit = 12;};
-    class rhs_ammo_762x51_M62_tracer: rhs_ammo_762x51_M80_Ball {hit = 12;};
-    class rhs_ammo_762x51_M80A1EPR_Ball: rhs_ammo_762x51_M80_Ball {hit = 12;};
-    class rhs_ammo_762x51_M993_Ball: rhs_ammo_762x51_M80_Ball {hit = 40;};
-    class rhs_ammo_762x51_Mk316_Special_Ball: rhs_ammo_762x51_M118_Special_Ball {hit = 12;};
-    class B_12Gauge_Slug; class rhs_ammo_12g_slug: B_12Gauge_Slug {hit = 15;};
-    class B_12Gauge_Pellets; class rhs_ammo_12g_00buckshot: B_12Gauge_Pellets {hit = 5;};
-    class rhs_ammo_12g_00buckshot_pellet: BulletBase {hit = 3;};
-    class SmokeShell; class rhs_ammo_an_m14_th3: SmokeShell {ace_grenades_incendiary = 1;};
-};
-class CfgMagazineWells {  //-- 3Rnd HE for WhiskyNova
-	class CBA_40mm_M203 {
-		BI_grenades_all[] = {"1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","3Rnd_HE_Grenade_shell","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F"};
-	};
-};
-class CfgMagazines {
-    class HandGrenade; 
-    class rhs_grenade_m15_mag: HandGrenade {mass = 5;};
-};
-class CfgVehicles {
-    class B_AssaultPack_Base;
-	class rhs_medic_bag: B_AssaultPack_Base	{maximumLoad = 170; mass = 20};
 };

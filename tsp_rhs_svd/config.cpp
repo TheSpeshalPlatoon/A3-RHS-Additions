@@ -7,7 +7,7 @@ class CfgWeapons {
 	class rhs_acc_bipod;
 	class rhs_acc_ak5;
 	class rhs_weap_svdp;
-	class rhs_acc_svd: rhs_acc_bipod {displayName = "SVD Wooden Stock"; model = "\tsp_rhs_svd\svd.p3d"; descriptionShort = "SVD stock";};
+	class rhs_acc_svd: rhs_acc_bipod {permenant = true; displayName = "SVD Wooden Stock"; model = "\tsp_rhs_svd\svd.p3d"; descriptionShort = "SVD stock";};
 	class rhs_acc_svd_muzzle: rhs_acc_ak5 {displayName = "SVD Wooden Stock"; model = "\tsp_rhs_svd\svd_muzzle.p3d"; descriptionShort = "SVD stock";};
 	
 	class rhs_weap_svdo: rhs_weap_svdp {

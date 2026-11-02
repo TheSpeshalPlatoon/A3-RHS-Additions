@@ -5,8 +5,8 @@ class CfgWeapons {
 	class rhs_acc_pointer;
 	class rhs_russian_akm_muzzle_slot;
 	class rhs_weap_rpk74n; class rhs_weap_rpk74m: rhs_weap_rpk74n {class WeaponSlotsInfo;};
-
-	class rhs_acc_rpk: rhs_acc_pointer {displayName = "RPK Wooden Furniture"; model = "\tsp_rhs_rpk\rpk.p3d"; descriptionShort = "Old school RPK wooden furniture";};
+	class rhs_acc_rpk: rhs_acc_pointer {permenant = true; displayName = "RPK Wooden Furniture"; model = "\tsp_rhs_rpk\rpk.p3d"; descriptionShort = "Old school RPK wooden furniture";};
+	
 	class rhs_weap_rpk74_wood: rhs_weap_rpk74m {
 		baseWeapon = "rhs_weap_rpk74_wood";	displayName = "RPK-74";	magazines[] = {"rhs_45Rnd_545x39_7N6M_AK"};
 		hiddenSelections[] = {"camo2"};	hiddenSelectionsTextures[] = {"\tsp_rhs_rpk\tex\rpk_nofurniture_ca.paa"}; hiddenSelectionsMaterials[] = {"\tsp_rhs_weapon\tex\empty.rvmat"};
