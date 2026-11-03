@@ -138,5 +138,6 @@ class CfgGlasses {
 		displayname = "Balaclava (Black)";
 		picture = "\tsp_rhs_head\gui\balaclava_black.paa";
 		hiddenSelectionsTextures[] = {"\tsp_rhs_head\tex\balaclava_black_co.paa"};
+		hiddenSelectionsMaterials[] = {"\tsp_rhs_head\tex\rhs_bala2_black.rvmat"};
 	};
 };
