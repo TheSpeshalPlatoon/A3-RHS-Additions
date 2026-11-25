@@ -13,7 +13,7 @@ class CfgPatches {class tsp_tier1_laser {requiredAddons[] = {"cba_common", "Tier
 #define mode_ir\
     class FlashLight {\
         ambient[] = {0.58431,0.72940999,0.81568998}; color[] = {149,186,208};\
-        irlight = 1; dayLight = 1; intensity = 50; scale[] = {0}; size = 1;\
+        irlight = 1; dayLight = 1; intensity = 20; scale[] = {0}; size = 1;\
         useFlare = 1; flareMaxDistance = 554; flareSize = 4;\
         innerAngle = 8; outerAngle = 14; coneFadeCoef = 4;\
         class Attenuation {start = 100; constant = 100; linear = 60; quadratic = 20; hardLimitStart = 50; hardLimitEnd = 300;};\

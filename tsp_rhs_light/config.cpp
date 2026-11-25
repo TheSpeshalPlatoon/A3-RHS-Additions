@@ -3,7 +3,7 @@ class CfgPatches {class tsp_rhs_light {requiredAddons[] = {"cba_common", "A3_Wea
 #define mode_light\
 	class FlashLight {\
 		ambient[] = {9, 7.5, 6}; color[] = {1300,1100,1000};\
-		daylight = 1; intensity = 5; scale[] = {0}; size = 1;\
+		daylight = 1; intensity = 2; scale[] = {0}; size = 1;\
 		useflare = 1; flaremaxdistance = 150; flaresize = 0.8;\
 		innerangle = 20; outerangle = 120; conefadecoef = 100;\
 		class Attenuation {start = 0; constant = 2; linear = 0.1; quadratic = 0.1; hardlimitstart = 100; hardlimitend = 200;};\
@@ -13,7 +13,7 @@ class CfgPatches {class tsp_rhs_light {requiredAddons[] = {"cba_common", "A3_Wea
 #define mode_light_2dp\
 	class FlashLight {\
 		ambient[] = {9, 7.5, 6}; color[] = {1300,1100,1000};\
-		daylight = 1; intensity = 5; scale[] = {0}; size = 1;\
+		daylight = 1; intensity = 2; scale[] = {0}; size = 1;\
 		useflare = 1; flaremaxdistance = 150; flaresize = 0.8;\
 		innerangle = 20; outerangle = 120; conefadecoef = 100;\
 		class Attenuation {start = 0; constant = 2; linear = 0.1; quadratic = 0.1; hardlimitstart = 100; hardlimitend = 200;};\
