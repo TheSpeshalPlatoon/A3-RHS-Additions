@@ -34,9 +34,12 @@ class CfgWeapons {
 
 	class rhs_acc_bipod;
 	class rhs_acc_m4_dino: rhs_acc_bipod {scope = 2; permenant = true; displayName = "SLS + Ergo"; model = "\tsp_rhs_ergo\dino.p3d"; descriptionShort = "SLS + Ergo";};
-	class rhs_weap_m4_dino: rhs_weap_m4_carryhandle {
+	class rhs_weap_m16a4;
+	class rhs_weap_m4_dino: rhs_weap_m16a4 {
 		displayName = "M4 (Dino)";
 		baseWeapon = "rhs_weap_m4_dino";
+		model = "\rhsusf\addons\rhsusf_weapons\M4\m4_ris_carryhandle.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","camo9","camo10"};
 		hiddenSelectionsTextures[] = {"\tsp_rhs_ergo\tex\m4_dino.paa"};
 		hiddenSelectionsMaterials[] = {
 			"\rhsusf\addons\rhsusf_weapons\m4\data\m4a1.rvmat", 
